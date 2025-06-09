@@ -2,20 +2,44 @@
 
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
+
+// Nível Novato - Movimentação das Peças
 
 int main() {
-    // Nível Novato - Movimentação das Peças
-    int i;
+    int i; // variável de controle dos loops
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
+    // Movimento da Torre (FOR loop): movimento horizontal de 5 casas para a direita.
+    // Usado a estrutura for, pois se sabe exatamente quantas vezes a peça vai se mover.
+    printf("Movimento da Torre:\n");
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    for(i = 1; i <= 5; i++){
+        // A cada iteração, representa o movimento de 1 casa para a direita.
+        printf("Casa %d: direita\n", i);  
+    }
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    // Movimento do Bispo (While loop): movimento de  5 casas na diagonal para cima e à direita.
+    // É possível o uso desta estrutura no movimento do Bispo, mas o while sempre checa a condição antes de fazer, quando não se sabe quantas vezes algo vai acontecer.
+    printf("\nMovimento do Bispo:\n");
+
+    i = 1; // Reinicializa o contador
+    while(i <= 5){
+        // A cada passo, o Bispo sobe uma linha e vai uma coluna à direita.
+        printf("Casa %d: Cima, Direita\n", i);
+        i++;
+    }
+    
+    // Movimento da Rainha (DO-While loop): movimento horizontal de 8 casas para a esquerda.
+    // O Do-While executa primeiro sem checar a condição, ele vai fazer pelo menos uma vez, mesmo se a condição for falsa.
+    printf("\nMovimento da Rainha:\n");
+
+    i = 1;
+    do {
+        printf("Casa %d: Esquerda\n, i");
+        i++;
+    } while(i <= 8);
+    
+
+    
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
