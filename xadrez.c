@@ -38,29 +38,24 @@ int main() {
     } while(i <= 8);
     
     // Variáveis que definem o movimento do cavalo
-    printf("\nMovimento do cavalo em L:");
+    printf("\nMovimento do cavalo em L:\n");
 
-    const int movimentosBaixo = 2; // Duas casas para baixo
-    const int movimentosEsquerda = 1; // Uma casa para esquerda
+    int movimentoCompleto = 1; // Flag para controlar o movimento em 'L'
 
-    // Separando os movimentos do cavalo com uma linha em branco
-    printf("\n");
+    // Loop externo com (While) para o movimento para baixo
 
-    // Loop externo com (for) para o movimento para baixo
-    for (int i = 0; i < movimentosBaixo; i++){
-        printf("Baixo\n"); 
-     
-        // Loop interno (While) executado após o segundo movimento para baixo
-        if (i == movimentosBaixo - 1){
-            int j = 0;
-            while (j < movimentosEsquerda){
-                printf("Esquerda\n"); // Movimento final para esquerda
-                j++;
-            }     
-        }
+    while (movimentoCompleto--)
+    {
+       for (int i = 0; i < 2; i++) {
+            printf("Cima\n"); // Imprime "cima" duas vezes
+       }
+       printf("Direita\n"); // Imprime "direita" uma vez
+    }
+
+       return 0;
     }
     
-
+    
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
@@ -68,5 +63,5 @@ int main() {
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
-    return 0;
-}
+    
+
