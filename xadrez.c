@@ -2,7 +2,6 @@
 
 // Desafio de Xadrez - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-
 // Nível Novato - Movimentação das Peças
 
 int main() {
@@ -18,7 +17,7 @@ int main() {
     }
 
     // Movimento do Bispo (While loop): movimento de  5 casas na diagonal para cima e à direita.
-    // É possível o uso desta estrutura no movimento do Bispo, mas o while sempre checa a condição antes de fazer, quando não se sabe quantas vezes algo vai acontecer.
+    // O While só continua enquanto a condição for verdadeira, sempre checa a condição antes de fazer, quando não se sabe quantas vezes algo vai acontecer.
     printf("\nMovimento do Bispo:\n");
 
     i = 1; // Reinicializa o contador
@@ -32,16 +31,14 @@ int main() {
     // O Do-While executa primeiro sem checar a condição, ele vai fazer pelo menos uma vez, mesmo se a condição for falsa.
     printf("\nMovimento da Rainha:\n");
 
-    i = 1;
+    i = 1; // Reinicializa o contador
     do {
-        printf("Casa %d: Esquerda\n, i");
+        printf("Casa %d: Esquerda\n", i);
         i++;
     } while(i <= 8);
     
-
-    
-
     // Nível Aventureiro - Movimentação do Cavalo
+
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
 
