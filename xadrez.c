@@ -42,7 +42,7 @@ int main() {
 
     int movimentoCompleto = 1; // Flag para controlar o movimento em 'L'
 
-    // Loop externo com (While) para o movimento para baixo
+    // Loop externo com (While)
 
     while (movimentoCompleto--)
     {
@@ -54,7 +54,6 @@ int main() {
 
        return 0;
     }
-    
     
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
